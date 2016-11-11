@@ -76,7 +76,6 @@ for row in reader:
 
 # Construct larger graph for fast detection
 constructLargerGraph()
-print "Finish training"
 
 # Read stream data
 reader = csv.reader(f_test)
@@ -101,7 +100,6 @@ for row in reader:
         f_output3.write("unverified\n")
     else:
         f_output3.write("trusted\n")
-    updateGraph(id1, id2)
 
 f_output1.close()
 f_output2.close()
